@@ -22,6 +22,7 @@ form {
     color: white;
     margin: 0.5em;
     transition: all 0.2s ease-in;
+    border-radius: 4px;
 }
 
 .boxList li:hover {

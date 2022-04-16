@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import BoxEmpty from './BoxEmpty';
 import BoxInput from './BoxInput'
+import BoxInputState from './BoxInputState';
 import BoxList from './BoxList';
 
 
@@ -21,9 +22,15 @@ function BoxGenerate() {
   const handleGenerate = (numOfBox) => {
       setBoxs(generateFakeBox(numOfBox));
   }
+
+  const handleGenerateByState = (numState) => {
+      console.log(numState);
+      setBoxs(generateFakeBox(numState));
+  }
   
   return <>
    <BoxInput generateNotify={handleGenerate}/>
+   {/* <BoxInputState generateTrigger={handleGenerateByState} /> */}
    {boxs.length > 0 ? <BoxList boxs={boxs} /> : <BoxEmpty />}
   </>
    
