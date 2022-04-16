@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import BoxEmpty from './BoxEmpty';
 import BoxInput from './BoxInput'
 import BoxList from './BoxList';
 
@@ -11,7 +12,6 @@ const generateFakeBox = (numOfBox) => {
             content: `Box #${i}`
         })
     }
-
     return boxs;
 }
 
@@ -24,7 +24,7 @@ function BoxGenerate() {
   
   return <>
    <BoxInput generateNotify={handleGenerate}/>
-   <BoxList boxs={boxs} />
+   {boxs.length > 0 ? <BoxList boxs={boxs} /> : <BoxEmpty />}
   </>
    
 }

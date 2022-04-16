@@ -2,12 +2,10 @@ import React from 'react'
 import styled from '../BoxGenerator/box.module.css'
 import Box from './Box'
 function BoxList({boxs}) {
-  
   return (
-    <ul className={styled.boxList}>
-        {boxs.map((box) => {
+     <ul className={styled.boxList}>
+        {boxs.length > 0 && boxs.map((box) => {
             return  <Box key={box.id} content={box.content} />
-            
         })}
     </ul>
   )
