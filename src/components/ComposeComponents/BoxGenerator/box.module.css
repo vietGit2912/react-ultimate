@@ -1,0 +1,30 @@
+form {
+    margin: 1rem;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    padding: 1rem 0;
+    display: inline-block;
+}
+.formLabel, .formInput {
+    margin-right: .5rem;
+}
+.box {
+    margin: 1rem;
+}
+.boxList {
+    list-style-type: none;
+}
+
+.boxList li {
+    display: inline-block;
+    padding: 1.5rem;
+    background: gray;
+    color: white;
+    margin: 0.5em;
+    transition: all 0.2s ease-in;
+}
+
+.boxList li:hover {
+    cursor: pointer;
+    transform: scaleX(0.8);
+}
