@@ -1,5 +1,7 @@
 import './App.css';
 import BoxGenerate from './components/ComposeComponents/BoxGenerator/index';
+import LiftingState from './components/Lifting State up/LiftingState';
+import ColorApp from './exercies/colorBox/ColorApp';
 
 const comment = {
   date: new Date(),
@@ -33,6 +35,14 @@ const comment = {
       {button} */} 
       <section>
         <BoxGenerate />
+      </section>
+
+      <section>
+        <LiftingState />
+      </section>
+
+      <section>
+        <ColorApp />
       </section>
     </div>
   )  
