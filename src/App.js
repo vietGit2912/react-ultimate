@@ -33,13 +33,13 @@ const comment = {
       {/* <State /> */}
       {/* <h4>Conditional Rendering</h4>
       {button} */} 
-      <section>
+      {/* <section>
         <BoxGenerate />
       </section>
 
       <section>
         <LiftingState />
-      </section>
+      </section> */}
 
       <section>
         <ColorApp />

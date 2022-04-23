@@ -25,7 +25,6 @@ function LiftingState() {
     <div>
         <h5>Todo List</h5>
         <TodoList todos={todos} handleItemBtnClick={handleItemBtnClick} />
-
     </div>
   )
 }
